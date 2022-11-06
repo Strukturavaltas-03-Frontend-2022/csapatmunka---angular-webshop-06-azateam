@@ -1,0 +1,202 @@
+{
+  "mobiles": [
+    {
+      "id": 30,
+      "catId": 2,
+      "name": "Nokia 8210 4G Dual",
+      "description": "Az új Nokia 8210 4G tisztelgés a klasszikusok előtt, merész formatervezéssel, élénk színekben, ráadásul új funkciókkal és hangrendszerrel felszerelve. A beépített kamerával megörökítheted a legszebb pillanatokat, majd könnyedén megoszthatod őket a szeretteiddel.",
+      "image": "../src/app/assets/img/Nokia_8210_4G_Dual.JPG",
+      "price": 34490,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 31,
+      "catId": 2,
+      "name": "myPhone Hammer 5 Smart Dual",
+      "description": "Strapabíró kivitel, hagyományos kialakítás, LTE és WiFi-megosztás.",
+      "image": "../src/app/assets/img/myPhone_Hammer_5_Smart_Dual.JPG",
+      "price": 32999,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 32,
+      "catId": 2,
+      "name": "myPhone Hammer Patriot",
+      "description": "A HAMMER Patriot egy egyedi kialakítású ütésálló mobiltelefon készülék 2,4″ méretű kijelzővel, ergonomikus kialakítással és egyedi, lengyel designal. ",
+      "image": "../src/app/assets/img/myPhone_Hammer_Patriot.JPG",
+      "price": 26420,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 33,
+      "catId": 2,
+      "name": "Nokia 3310 Dual (2017)",
+      "description": "A Nokia 3310 (2017) kultikus alakja a nagy előd Nokia 3310-re emlékeztet. Azon kívül, hogy jól néz ki, intuitív felhasználói felületet kínál. A 2.4 collos polarizált, kerekített kijelző kiválóan látható erős napfényben is.",
+      "image": "../src/app/assets/img/Nokia_3310_Dual (2017).JPG",
+      "price": 25190,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 34,
+      "catId": 2,
+      "name": "Nokia 6310 (2021)",
+      "description": "Az új Nokia 6310-et 2021-re újragondoltuk, nagyobb gombokkal és 2,8 hüvelykes, ívelt képernyővel érkezik.",
+      "image": "../src/app/assets/img/Nokia_6310_(2021).JPG",
+      "price": 24999,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 35,
+      "catId": 2,
+      "name": "Nokia 230 Dual",
+      "description": "Gyönyörű kialakítású és selfie-re kész, a Nokia 230 Dual SIM 2MP-es LED vakus előlre néző kamerával és homokfúvással készült aluminium hátós borítással megfelelő társ a mindennapokra.",
+      "image": "../src/app/assets/img/Nokia_230_Dual.JPG",
+      "price": 24120,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 36,
+      "catId": 2,
+      "name": "myPhone Hammer 4",
+      "description": "A myPhone Hammer 4 2,8 hüvelykes színes kijelzője 320 x 240 px felbontású, és olvasható betűkkel és nagy ikonokkal rendelkezik a könnyű használat érdekében. A különálló, háttérvilágítással ellátott gombok szintén megkönnyítik a munkát.",
+      "image": "../src/app/assets/img/myPhone_Hammer_4.JPG",
+      "price": 22999,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 37,
+      "catId": 2,
+      "name": "Nokia 5310 (2020)",
+      "description": "Tarts lépést az élettel ennek a régi kedvencnek az újragondolt kiadásával. A nagy teljesítményű elülső dupla hangszórókkal zenét hallgathatsz az MP3-lejátszón1 és az FM-rádióban, és minden hívást tisztán fogsz hallani. Az akkumulátor üzemideje napokig gondoskodik arról, hogy kapcsolatban maradj.",
+      "image": "../src/app/assets/img/Nokia_5310_(2020).JPG",
+      "price": 22020,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 38,
+      "catId": 2,
+      "name": "myPhone Hammer 3",
+      "description": "A HAMMER 3 mind irodai, mind szélsőséges körülmények között jól működik. A nagy képernyő könnyű kezelhetőséget és a színek élénk visszaadását biztosítja.",
+      "image": "../src/app/assets/img/myPhone_Hammer_3.JPG",
+      "price": 19790,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 39,
+      "catId": 2,
+      "name": "Nokia 225 4G Dual",
+      "description": "Hozd ki a legtöbbet a Nokia 225 4G modern funkcióiból, mert immár megfizethető a 4G, így tiszták a hanghívások, többszereplős játékokkal játszhatsz, közösségi oldalakat és másokat használhatsz.",
+      "image": "../src/app/assets/img/Nokia_225_4G_Dual.JPG",
+      "price": 19490,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 40,
+      "catId": 2,
+      "name": "myPhone Halo Q",
+      "description": "A nagy és könnyen leolvasható 2,8 hüvelykes kijelző színes, egyszerűen kezelhető felületet biztosít. Mindent a nagy gombok segítségével állíthat besz.",
+      "image": "../src/app/assets/img/myPhone_Halo_Q.JPG",
+      "price": 18990,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 41,
+      "catId": 2,
+      "name": "myPhone Maestro",
+      "description": "A myPhone Maestro egy elegáns hagyományos mobiltelefon nagy 2,8 méretű képernyővel, 1000 mAh kapacitású akkumulátorral és 2 Mpx kamerával. Modern, vékony kialakításával stílusos megjelenést biztosít.",
+      "image": "../src/app/assets/img/myPhone_Maestro.JPG",
+      "price": 18400,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 42,
+      "catId": 2,
+      "name": "myPhone Halo 3",
+      "description": "A myPhone Halo 3 egy klasszikus mobiltelefon tiszta, 2,31 hüvelykes színes kijelzővel, nagy háttérvilágítású gombokkal és nagy teljesítményű LED-es zseblámpával.",
+      "image": "../src/app/assets/img/myPhone_Halo_3.JPG",
+      "price": 17490,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 43,
+      "catId": 2,
+      "name": "myPhone Maestro 2",
+      "description": "A myPhone Maestro 2 egy klasszikus telefon nagy, 2,8 hüvelykes képernyővel, amely rendkívüli benyomást kelt vékony, 9 mm-es mélyfekete burkolatával. 1000 mAh kapacitású akkumulátorral és kamerával rendelkezik. Elegáns és könnyen használható.",
+      "image": "../src/app/assets/img/myPhone_Maestro_2.JPG",
+      "price": 17090,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 44,
+      "catId": 2,
+      "name": "myPhone Up",
+      "description": "A myPhone Up egy klasszikus telefon a legjobb, elegáns változatában. A cég klasszikus modelljei közül a legnagyobb 3,2 hüvelykes képernyővel, fém hátlappal, több órányi beszélgetést biztosító akkumulátorral és USB-C-vel rendelkezik.",
+      "image": "../src/app/assets/img/myPhone_Up.JPG",
+      "price": 16939,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 45,
+      "catId": 2,
+      "name": "Nokia 210 Dual",
+      "description": "A Nokia 210 az Opera Mini webböngészővel a legegyszerűbb módon biztosítja az internethez való kapcsolódást. Gyors, könnyű és csökkentett adatmennyiséget használ",
+      "image": "../src/app/assets/img/Nokia_210_Dual.JPG",
+      "price": 15410,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 46,
+      "catId": 2,
+      "name": "myPhone Halo C",
+      "description": "A myPhone Halo azok számára ideális készülék, akik klasszikus telefont szeretnének több funkcióval. Ez a készülék rendelkezik színes kijelzővel, zenelejátszóval valamint az FM rádió is lehetséges.",
+      "image": "../src/app/assets/img/myPhone_Halo_C.JPG",
+      "price": 14999,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    },
+    {
+      "id": 47,
+      "catId": 2,
+      "name": "Nokia 110 4G Dual",
+      "description": "A telefon egyszerű, jól bevált dizájnnal és praktikus, klasszikus gombokkal rendelkezik, amelyekkel elgépelés nélkül írhatsz be szöveges üzenetet.",
+      "image": "../src/app/assets/img/Nokia_110_4G_Dual.JPG",
+      "price": 11990,
+      "stock": 1,
+      "featured": false,
+      "active": false
+    }
+  ]
+}
