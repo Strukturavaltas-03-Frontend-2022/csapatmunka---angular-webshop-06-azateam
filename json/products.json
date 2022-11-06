@@ -1,0 +1,167 @@
+[
+  {
+    "id": 0,
+    "catId": 2,
+    "name": "iPhone 14 256 GB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2532 × 1170, OLED kijelző, 6 magos Apple A15 Bionic processzor, 256 GB belső tárhely, 12 Mpx felbontású (f/1,5) + 12 Mpx felbontású (f/2,4), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, iOS 16 operációs rendszer ",
+    "image": "../src/app/assets/img/RI041c1-01.jpg",
+    "price": 509990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 1,
+    "catId": 2,
+    "name": "iPhone 14 Plus 128 GB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2778 × 1284, OLED kijelző, 6 magos Apple A15 Bionic processzor, 128 GB belső tárhely, 12 Mpx felbontású (f/1,5) + 12 Mpx felbontású (f/2,4), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés 15W, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI042b2-01.jpg",
+    "price": 499990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 2,
+    "catId": 2,
+    "name": "iPhone 14 128 GB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2532 × 1170, OLED kijelző, 6 magos Apple A15 Bionic processzor, 128 GB belső tárhely, 12 Mpx felbontású (f/1,5) + 12 Mpx felbontású (f/2,4), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer ",
+    "image": "../src/app/assets/img/RI041b4-01.jpg",
+    "price": 449990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 3,
+    "catId": 2,
+    "name": "iPhone 14 Plus 256GB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2778 × 1284, OLED kijelző, 6 magos Apple A15 Bionic processzor, 256 GB belső tárhely, 12 Mpx felbontású (f/1,5) + 12 Mpx felbontású (f/2,4), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI042c4-01.jpg",
+    "price": 537090,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 4,
+    "catId": 2,
+    "name": "iPhone 14 Pro 128 GB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2556 × 1179, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 6 GB RAM, 128 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés 15W, , iOS 16 operációs rendszer ",
+    "image": "../src/app/assets/img/RI043b4-01.jpg",
+    "price": 569990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 5,
+    "catId": 2,
+    "name": "iPhone 14 Pro Max 128 GB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2796 × 1290, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 128 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer ",
+    "image": "../src/app/assets/img/RI044b2-01.jpg",
+    "price": 629990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 6,
+    "catId": 2,
+    "name": "iPhone 14 Pro 256 GB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2556 × 1179, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 256 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer ",
+    "image": "../src/app/assets/img/RI043c3-01.jpg",
+    "price": 629990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 7,
+    "catId": 2,
+    "name": "iPhone 14 512 GB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2532 × 1170, OLED kijelző, 6 magos Apple A15 Bionic processzor, 512 GB belső tárhely, 12 Mpx felbontású (f/1,5) + 12 Mpx felbontású (f/2,4), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI041d3-01.jpg",
+    "price": 629990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 8,
+    "catId": 2,
+    "name": "iPhone 14 Plus 512 GB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2778 × 1284, OLED kijelző, 6 magos Apple A15 Bionic processzor, 512 GB belső tárhely, 12 Mpx felbontású (f/1,5) + 12 Mpx felbontású (f/2,4), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI042d1-01.jpg",
+    "price": 679990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 9,
+    "catId": 2,
+    "name": "iPhone 14 Pro Max 256 GB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2796 × 1290, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 256 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI044c4-01.jpg",
+    "price": 689990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 10,
+    "catId": 2,
+    "name": "iPhone 14 Pro 512 GB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2556 × 1179, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 512 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI043d2-01.jpg",
+    "price": 629990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 11,
+    "catId": 2,
+    "name": "iPhone 14 Pro Max 512 GBB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2796 × 1290, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 512 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI044d3-01.jpg",
+    "price": 809990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 12,
+    "catId": 2,
+    "name": "iPhone 14 Pro 1TB",
+    "description": "Mobiltelefon - 6,1-es kijelző, 2556 × 1179, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 1000 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI043e2-01.jpg",
+    "price": 869990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 13,
+    "catId": 2,
+    "name": "iPhone 14 Pro Max 1TB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2796 × 1290, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 1000 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI044e1-01.jpg",
+    "price": 929990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  },
+  {
+    "id": 14,
+    "catId": 2,
+    "name": "iPhone 14 Pro MaxG 1TB",
+    "description": "Mobiltelefon - 6,7-es kijelző, 2796 × 1290, 120Hz, OLED kijelző, 6 magos Apple A16 Bionic processzor, 1000 GB belső tárhely, 48 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/1,78) + 12 Mpx felbontású (f/2,2), hátlapi kamera, optikai zoommal, 12 Mpx felbontású előlapi kamera, optikai képstabilizátor, GPS, Glonass, NFC, 4G (LTE), 5G, Lightning port, single + eSIM, IP68 védelem, kártyafüggetlen, gyorstöltés 15W, vezeték nélküli töltés, , iOS 16 operációs rendszer",
+    "image": "../src/app/assets/img/RI044e3-01.jpg",
+    "price": 929990,
+    "stock": 15,
+    "featured": false,
+    "active": false
+  }
+]
