@@ -1,0 +1,13 @@
+[
+  {
+    "id": 0,
+    "catId": 0,
+    "name": "",
+    "description": "",
+    "image": "",
+    "price": 1,
+    "stock": 1,
+    "featured": false,
+    "active": false
+  }
+]
