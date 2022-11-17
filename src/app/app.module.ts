@@ -14,7 +14,7 @@ import { HomeComponent } from './page/home/home.component';
     NavigationComponent,
     Cat01Component,
     Cat02Component,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
