@@ -1,1 +1,7 @@
-<p>home works!</p>
+<h3>Összes termék</h3>
+<p>Az összes telefon ár szerint rendezve tesztelés céljából.</p>
+<div class="row">
+    <div class="col-4" *ngFor="let productItem of productList">
+        <app-product-card [product]="productItem"></app-product-card>
+    </div>
+</div>
