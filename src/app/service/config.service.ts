@@ -15,7 +15,7 @@ export class ConfigService {
 
   menuItems: IMenuItem[] = [
     { text: 'Kezdőlap', link: '/', icon: 'home' },
-    { text: 'Okos telefonok', link: '/cat01' },
+    { text: 'Okostelefonok', link: '/cat01' },
     { text: 'Hagyományos telefonok', link: '/cat02' },
   ];
 
