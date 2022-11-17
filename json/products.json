@@ -164,12 +164,171 @@
     "featured": false,
     "active": false
   },
-  
-  
-  
-  
-  
-  
+  {
+    "id": 15,
+    "catId": 2,
+    "name": "Samsung Galaxy S21 FE 128GB 6GB RAM Dual",
+    "description": "Octa-core CPU, 128 GB memória, 6 GB RAM, 6.40 kijelző, 1080 x 2400 pixel, Dynamic AMOLED 2x, 12 MP + 8 MP + 12 MP-es kamera, 32 MP-es hátlapi kamera, 155.7 x 74.5 x 7.9 mm, 177 g",
+    "image": "../src/app/assets/img/1200096.samsung-galaxy-s21-fe-256gb-8gb-ram-dual-sm-g990b",
+    "price": 192000,
+    "stock": 24,
+    "featured": false,
+    "active": true
+  },
+{
+  "id": 16,
+  "catId": 2,
+  "name": "Samsung Galaxy S10+ 512GB Dual",
+  "description": "Kijelző 6,4 3040 x 1440 Quad HD+ Dinamikus AMOLED, Processzor: Nyolcmagos AP Integrált kétmagos NPU-val, adaptív gyorstöltés, vezeték nélküli gyorstöltés 2.0, vezeték nélküli töltés, hátlapi főkamera 12 MP - f/1.5 & 2.4",
+  "image": "../src/app/assets/img/557045331.samsung-galaxy-s10-512gb-dual-g975",
+  "price": 380000,
+  "stock": 14,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 17,
+  "catId": 2,
+  "name": "Samsung Galaxy S10e 128GB Dual",
+  "description": "Octa-core CPU, 128 GB memória, 6 GB RAM, 5.80 kijelző, 12 MP + 16 MP-es kamera, 10 MP-es hátlapi kamera, 142.2 x 69.9 x 7.9 mm, 150 g",
+  "image": "../src/app/assets/img/557286087.samsung-galaxy-s10e-128gb-dual-g970",
+  "price": 175000,
+  "stock": 24,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 18,
+  "catId": 2,
+  "name": "Samsung Galaxy Note10 512GB Dual",
+  "description": " Kijelző típusa Dynamic AMOLED, felbontás 3040 x 1440 (Quad HD+), processzor CPU típus, nyolcmagos, háttértár 512 GB, előlapi kamera 10 MP, hátlapi kamera 12/16/12MP + VGA, akkumulátor kapacitása 4300 mAh, 162.3 x 77.2 x 7.9 mm, 196 g",
+  "image": "../src/app/assets/img600879162.samsung-galaxy-note10-512gb-dual-sm-n975",
+  "price": 400009,
+  "stock": 24,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 19,
+  "catId": 2,
+  "name": "Samsung Galaxy S20 128GB 8GB RAM Dual",
+  "description": "Kijelző Dynamic AMOLED 2X, képernyő 3200 x 1440 pixel, belső tárhely 128GB, első kamera 10 MP, hátlapi kamera 12 MP, 152 mm x 69 mm x 8 mm, 0.43 kg",
+  "image": "../src/app/assests/654985347.samsung-galaxy-s20-128gb-8gb-ram.jpg",
+  "price": 190000,
+  "stock": 14,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 20,
+  "catId": 2,
+  "name": "Samsung Galaxy A32 5G 128GB 4GB RAM Dual",
+  "description": "Processzor MediaTek Dimensity 720 MT6853 8 magos, kijelző felbontás 1600 x 720 pixel, előlapi kamera 12MPx, hátlapi kamera 48MPx, 206g",
+  "image": "./src/app/assets/img/778519911.samsung-galaxy-a32-5g-128gb-4gb-ram-dual-a326.jpg",
+  "price": 99000,
+  "stock": 14,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 21,
+  "catId": 2,
+  "name": "Samsung Galaxy S20 FE 5G 256GB 8GB RAM Dual",
+  "description": "Processzor Qualcomm Snapdragon 865 8 magos, kijelző felbontás 2400 x 1080 pixel, hátlapi kamera 12+12+8MP, előlapi kamera 32MP, 190g",
+  "image": "./src/app/assets/img/824912928.samsung-galaxy-s20-fe-5g-256gb-8gb-ram-dual-g781.jpg",
+  "price": 188000,
+  "stock": 14,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 22,
+  "catId": 2,
+  "name": "Samsung Galaxy A22 5G 128GB 4GB RAM",
+  "description": "Hátlapi kamera 48 +5 +2MP, előlapi kamera 8MP, RAM:4GB, ROM:128GB, MicroSDXC, 5G, 5000mAh, Dual SIM, Wi-Fi 5/ac, Bluetooth, NFC, 203g,",
+  "image": "./src/app/assets/img/927458994.samsung-galaxy-a22-5g-128gb-4gb-ram-a226f.jpg",
+  "price": 89000,
+  "stock": 34,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 23,
+  "catId": 2,
+  "name": "Samsung Galaxy S22 5g 128GB 8GB RAM",
+  "description": "Processzor Exynos 2200, kijelző Dynamic AMOLED 2X, 120Hz, HDR10+, 1080 x 2340 pixel, előlapi kamera 10MPx, hátső kamera 50MPx, 167g",
+  "image": "./src/app/assets/img/931302774.samsung-galaxy-s22-5g-128gb-8gb-ram-sm-s906.jpg",
+  "price": 340000,
+  "stock": 4,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 24,
+  "catId": 2,
+  "name": "Samsung Galaxy S22 Ultra 5g 256GB 12GB RAM",
+  "description": "Processzor Samsung Exynos 2200 8 magos, kijelző  Kapacitív Dynamic AMOLED 2X, 3080 x 1440 pixel, előlapi kamera 40MPx, hátlapi kamera 108MPx, 228g",
+  "image": "./src/app/assets/img/931303182.samsung-galaxy-s22-ultra-5g-256gb-12gb-ram-sm-s908b.jpg",
+  "price": 408000,
+  "stock": 44,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 25,
+  "catId": 2,
+  "name": "Samsung Galaxy A03 64GB 4GB RAM Dual",
+  "description": "Processzor Unisoc ums9230 Octa-core (2x1.6 GHz & 6x1.6 GHz), előlapi kamera 5MP, hátlapi kamera 48MP/2MP, 196g",
+  "image": "./src/app/assets/img/945569505.samsung-galaxy-a03-64gb-4gb-ram-dual-a035.jpg",
+  "price": 65000,
+  "stock": 24,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 26,
+  "catId": 2,
+  "name": "Samsung Galaxy A13 64GB 4GB RAM Dual",
+  "description": "Processzor Exynos 850, kijelző PLS, 720 x 1600, tárhely 64GB, kamera felbontása 50Mpx, 195g",
+  "image": "./src/app/assets/img/999148983.samsung-galaxy-a13-64gb-4gb-ram-dual-sm-a137f.jpg",
+  "price": 60000,
+  "stock": 24,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 27,
+  "catId": 2,
+  "name": "Samsung Galaxy Z Fold4 5G 1TB 12GB RAM Dual",
+  "description": "Processzor Qualcomm SM8475 Snapdragon 8+ Gen 1 (4nm), kijelző Foldable Dynamic AMOLED 2X, 1812 x 2176 pixel, hátlapi kamera 50MP, előlapi kamera 10MP, 263g",
+  "image": "./src/app/assets/img/1013513559.samsung-galaxy-z-fold4-5g-1tb-12gb-ram-dual-f936.jpg",
+  "price": 900000,
+  "stock": 24,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 28,
+  "catId": 2,
+  "name": "Samsung Galaxy Z Flip4 5G 512GB 8GB RAM Dual",
+  "description": "Processzor Qualcomm SM8475 Snapdragon 8+Gen 1 nyolcmagos, tárhely 512GB, kijelző Dynamic AMOLED 2X, 2640 x 1080 pixel, hátlapi kamera 12MP, előlapi kamera 10MP",
+  "image": "../src/app/assets/img/1013515821.samsung-galaxy-z-flip4-5g-512gb-8gb-ram-dual-f721.jpg",
+  "price": 318000,
+  "stock": 14,
+  "featured": false,
+  "active": true
+},
+{
+  "id": 29,
+  "catId": 2,
+  "name": "Samsung Galaxy S8 64GB",
+  "description": "Samsung Exynos 8895, 8 magos, tárhely 64GB, Super AMOLED 1440 x 2960, hátsó kamera 12MP, előlapi kamera 8MP, 68.1 x 8 x 148.99mm, 155g",
+  "image": "../src/app/assets/img/res_d3d6de0d20c173972204e4cd35decb55.jpg",
+  "price": 123000,
+  "stock": 4,
+  "featured": false,
+  "active": true
+},
   {
     "id": 31,
     "catId": 2,
@@ -235,7 +394,7 @@
     "stock": 4,
     "featured": false,
     "active": false
-    },  
+    },
   {
     "id": 37,
     "catId": 2,
@@ -243,7 +402,7 @@
     "description": "Navon Classic Mobiltelefon, Dual SIM, 32MB, Ezüst (NAVONCLASSIC)",
     "image": "../src/app/assets/img/navon-classic.jpg",
     "price": 6990,
-    "stock": 7,
+    "stock": 7
   },
   {
     "id": 38,
