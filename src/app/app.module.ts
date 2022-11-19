@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,7 @@ import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { HighlightedProductsComponent } from './common/highlighted-products/highlighted-products.component';
+import { DataEditorComponent } from './page/data-editor/data-editor.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { HighlightedProductsComponent } from './common/highlighted-products/high
     Cat02Component,
     HomeComponent,
     ProductCardComponent,
-    HighlightedProductsComponent
+    HighlightedProductsComponent,
+    DataEditorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
