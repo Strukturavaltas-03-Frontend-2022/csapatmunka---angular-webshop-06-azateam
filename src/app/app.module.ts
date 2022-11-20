@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -10,6 +11,8 @@ import { Cat02Component } from './page/cat02/cat02.component';
 import { HomeComponent } from './page/home/home.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { HighlightedProductsComponent } from './common/highlighted-products/highlighted-products.component';
+import { ProductListComponent } from './common/product-list/product-list.component';
+import { FilterPipe } from './pipe/filter.pipe';
 import { SortByPricePipe } from './pipe/sort-by-price.pipe';
 import { TopProductPipe } from './pipe/top-product.pipe';
 import { RandomProductsPipe } from './pipe/random-products.pipe';
@@ -25,6 +28,8 @@ import { CategoryFilterPipe } from './pipe/category-filter.pipe';
     HomeComponent,
     ProductCardComponent,
     HighlightedProductsComponent,
+    ProductListComponent,
+    FilterPipe,
     SortByPricePipe,
     TopProductPipe,
     RandomProductsPipe,
@@ -34,7 +39,8 @@ import { CategoryFilterPipe } from './pipe/category-filter.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule    
   ],
   providers: [
     { provide: DEFAULT_CURRENCY_CODE, useValue: 'HUF' }
