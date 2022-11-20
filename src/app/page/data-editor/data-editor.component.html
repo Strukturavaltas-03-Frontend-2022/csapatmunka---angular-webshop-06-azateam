@@ -4,13 +4,13 @@
     <div class="input-group mb-3">
       <div class="input-group-text">
         <select [(ngModel)]="filterKey" class="form-control">
-          <option value="">filter everywhere</option>
+          <option value="">szűrés minden mezőben</option>
           <option *ngFor="let col of searchColumns" [value]="col.key">
             {{ col.title }}
           </option>
         </select>
       </div>
-      <input [(ngModel)]="phrase" class="form-control ml-3 mt-2" type="text" placeholder="search phrase">
+      <input [(ngModel)]="phrase" class="form-control ml-3 mt-2" type="text" placeholder="kereső kifejezés">
     </div>
   </div>
 </div>
@@ -162,6 +162,6 @@
       background: rgb(99, 3, 67);
     }
   </style>
-  <pagination-controls class=" my-pagination" (pageChange)="p = $event" previousLabel="Previous" nextLabel="Next">
+  <pagination-controls class=" my-pagination" (pageChange)="p = $event" previousLabel="Előző" nextLabel="Következő">
   </pagination-controls>
 </div>
