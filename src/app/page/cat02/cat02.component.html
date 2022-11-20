@@ -8,8 +8,8 @@
 </div>
 
 <h3>A kategória összes terméke</h3>
-<div class="row">
-  <div class="col-4" *ngFor="let productItem of productList$ |async | categoryFilter:'2' | sortByPrice">
-    <app-product-card [product]="productItem"></app-product-card>
+<div class="row my-5">
+  <div class="col-12">
+    <app-product-list [productList]="productList$ | async | categoryFilter:'2' | sortByPrice"></app-product-list>
   </div>
 </div>
