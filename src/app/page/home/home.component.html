@@ -3,7 +3,7 @@
   <div class="col-12">
     <app-highlighted-products [highlightedProducts]="featuredProducts"></app-highlighted-products>
   </div>
-</div>
+7</div>
 
 <h3>Akciós termékek</h3>
 <div class="row my-5">
@@ -12,10 +12,18 @@
   </div>
 </div>
 
+<!-- //ide rakd!! -->
 <h3>Összes termék</h3>
-<p>Az összes telefon ár szerint rendezve tesztelés céljából.</p>
+
+<div class="input-group mb-3">
+  <input [(ngModel)]="filterPhrase" type="text" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="button-addon2">
+</div>
+
 <div class="row">
-    <div class="col-4" *ngFor="let productItem of productList">
+    <div class="col-4" *ngFor="let productItem of productList | filter: filterPhrase:'description', 'name' " as result>
         <app-product-card [product]="productItem"></app-product-card>
     </div>
+    <p>
+
+    </p>
 </div>

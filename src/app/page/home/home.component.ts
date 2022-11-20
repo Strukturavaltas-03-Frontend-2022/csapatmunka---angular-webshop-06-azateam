@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
 
   subProducts: Product[] = this.productService.getSubProducts(5);
 
+  filterPhrase: string = '';
+
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
