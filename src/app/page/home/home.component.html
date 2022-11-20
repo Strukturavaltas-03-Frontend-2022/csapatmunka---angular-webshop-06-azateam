@@ -3,7 +3,7 @@
   <div class="col-12">
     <app-highlighted-products [highlightedProducts]="featuredProducts"></app-highlighted-products>
   </div>
-7</div>
+</div>
 
 <h3>Akciós termékek</h3>
 <div class="row my-5">
@@ -12,8 +12,17 @@
   </div>
 </div>
 
-<!-- //ide rakd!! -->
 <h3>Összes termék</h3>
+<div class="row my-5">
+  <div class="col-12">
+    <app-product-list [productList]="productList"></app-product-list>
+  </div>
+</div>
+
+
+
+<!-- //ide rakd!! -->
+<!-- <h3>Összes termék</h3>
 
 <div class="input-group mb-3">
   <input [(ngModel)]="filterPhrase" type="text" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="button-addon2">
@@ -26,4 +35,4 @@
     <p>
 
     </p>
-</div>
+</div> -->
