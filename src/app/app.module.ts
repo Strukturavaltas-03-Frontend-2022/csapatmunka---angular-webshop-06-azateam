@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +21,7 @@ import { TopProductPipe } from './pipe/top-product.pipe';
 import { RandomProductsPipe } from './pipe/random-products.pipe';
 import { FeaturedProductPipe } from './pipe/featured-product.pipe';
 import { CategoryFilterPipe } from './pipe/category-filter.pipe';
+import { AdminComponent } from './page/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { CategoryFilterPipe } from './pipe/category-filter.pipe';
     ProductCardComponent,
     HighlightedProductsComponent,
     DataEditorComponent,
+    AdminComponent,
     SorterPipe,
     ProductListComponent,
     FilterPipe,

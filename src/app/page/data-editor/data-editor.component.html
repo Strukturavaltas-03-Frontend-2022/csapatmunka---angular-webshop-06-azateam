@@ -5,7 +5,7 @@
       <div class="input-group-text">
         <select [(ngModel)]="filterKey" class="form-control">
           <option value="">filter everywhere</option>
-          <option *ngFor="let col of columns" [value]="col.key">
+          <option *ngFor="let col of searchColumns" [value]="col.key">
             {{ col.title }}
           </option>
         </select>
@@ -19,19 +19,58 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th *ngFor="let col of columns" (click)="onColumnSelect(col.key)" class="column__header">
+          <th *ngFor="let col of searchColumns" (click)="onColumnSelect(col.key)" class="column__header">
             <div class="d-flex justify-content-between">
               {{ col.title }}
               <i *ngIf="sortColumn==col.key" [ngClass]="sortIcon" class="sort__direction__icon mt-2"></i>
             </div>
           </th>
-          <th>Manage</th>
+          <th>Kezel</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody *ngIf="productList$ | async as products">
+        <tr>
+          <td class="align-middle input__width__narrow text-right px-4">új
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.catId" type="number" class="input__width__narrow text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.name" type="text" class="text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.description" type="text" class="text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.image" type="text">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.price" type="number" class="input__width text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.stock" type="number" class="input__width text-right">
+          </td>
+          <td class="align-middle px-5">
+            <div class="d-flex justify-content-center">
+              <input value="true" [(ngModel)]="newProduct.featured" type="checkbox" [checked]="newProduct.featured"
+                class="mx-auto">
+            </div>
+          </td>
+          <td class="align-middle px-5">
+            <div class="d-flex justify-content-center">
+              <input value="true" [(ngModel)]="newProduct.active" type="checkbox" [checked]="newProduct.active">
+            </div>
+          </td>
+          <td class="align-middle">
+            <div class="btn-group" role="group" aria-label="Manage buttons">
+              <button type="button" class="btn btn-warning" (click)="onCreate(newProduct)">
+                <i class="fa fa-save"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
         <tr
-          *ngFor="let product of productList | sorter:sortColumn:sortDirect | paginate: { itemsPerPage: 10, currentPage: p }">
-          <!-- | filter:phrase:filterKey"> -->
+          *ngFor="let product of products | filter:phrase:filterKey | sorter:sortColumn:sortDirect | paginate: { itemsPerPage: 10, currentPage: p }">
           <td class="align-middle input__width__narrow text-right px-4">
             {{product.id}}
           </td>
@@ -98,7 +137,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">
-          Delete product
+          Termék törlése
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -106,12 +145,12 @@
       </div>
       <div class="modal-body">
         <p>
-          Are you sure about permanently deleting product?
+          Biztosan véglegesen törölni akarja a terméket?
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" (click)="onDelete()" data-dismiss="modal">Yes, I'm sure</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Mégsem</button>
+        <button type="button" class="btn btn-primary" (click)="onDelete()" data-dismiss="modal">Igen, biztosan</button>
       </div>
     </div>
   </div>
@@ -120,7 +159,7 @@
 <div class="d-flex justify-content-center">
   <style>
     .my-pagination /deep/ .ngx-pagination .current {
-      background: rgb(0, 80, 0);
+      background: rgb(99, 3, 67);
     }
   </style>
   <pagination-controls class="my-pagination" (pageChange)="p = $event" previousLabel="Previous" nextLabel="Next">
