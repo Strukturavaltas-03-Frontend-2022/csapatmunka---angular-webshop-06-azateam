@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/service/product.service';
 
@@ -9,12 +10,15 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class HomeComponent implements OnInit {
 
-  //termékek listája a ProductService megfelelő metódusával lekérdezhető
-  productList: Product[] = this.productService.getAll();
+  productList$: Observable<Product[]> = this.productService.getAll();
 
-  featuredProducts: Product[] = this.productService.getFeatured(5);
-
-  subProducts: Product[] = this.productService.getSubProducts(5);
+  /*   
+    //termékek listája a ProductService megfelelő metódusával lekérdezhető
+    productList: Product[] = this.productService.getAll();
+  
+    featuredProducts: Product[] = this.productService.getFeatured(5);
+  
+    subProducts: Product[] = this.productService.getSubProducts(5); */
 
   filterPhrase: string = '';
 

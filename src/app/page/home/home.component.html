@@ -1,38 +1,29 @@
+<div *ngIf="!(productList$ | async)">
+  <h3>Kérlek indítsd el a json-szervert</h3>
+  <p>A szerver indítása: <code>json-server .\json\products.json</code> </p>
+  <br>
+</div>
+
 <h3>Kiemelt termékek</h3>
 <div class="row my-5">
   <div class="col-12">
-    <app-highlighted-products [highlightedProducts]="featuredProducts"></app-highlighted-products>
+    <app-highlighted-products
+      [highlightedProducts]="productList$ | async | featuredProduct| randomProducts| topProduct">
+    </app-highlighted-products>
   </div>
 </div>
 
 <h3>Akciós termékek</h3>
 <div class="row my-5">
   <div class="col-12">
-    <app-highlighted-products [highlightedProducts]="subProducts"></app-highlighted-products>
+    <app-highlighted-products [highlightedProducts]="productList$ | async | randomProducts | topProduct">
+    </app-highlighted-products>
   </div>
 </div>
 
 <h3>Összes termék</h3>
 <div class="row my-5">
   <div class="col-12">
-    <app-product-list [productList]="productList"></app-product-list>
+    <app-product-list [productList]="productList$ | async | sortByPrice"></app-product-list>
   </div>
 </div>
-
-
-
-<!-- //ide rakd!! -->
-<!-- <h3>Összes termék</h3>
-
-<div class="input-group mb-3">
-  <input [(ngModel)]="filterPhrase" type="text" class="form-control" placeholder="Search..." aria-label="search" aria-describedby="button-addon2">
-</div>
-
-<div class="row">
-    <div class="col-4" *ngFor="let productItem of productList | filter: filterPhrase:'description', 'name' " as result>
-        <app-product-card [product]="productItem"></app-product-card>
-    </div>
-    <p>
-
-    </p>
-</div> -->
