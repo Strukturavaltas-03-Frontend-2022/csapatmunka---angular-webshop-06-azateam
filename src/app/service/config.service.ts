@@ -6,6 +6,11 @@ export interface IMenuItem {
   icon?: string;
 }
 
+interface ITableColumn {
+  title: string;
+  key: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,6 +22,46 @@ export class ConfigService {
     { text: 'Kezdőlap', link: '/', icon: 'home' },
     { text: 'Okostelefonok', link: '/cat01' },
     { text: 'Hagyományos telefonok', link: '/cat02' },
+    { text: 'Admin', link: '/admin' },
+  ];
+
+  columns: ITableColumn[] = [
+    {
+      key: 'id',
+      title: '#',
+    },
+    {
+      key: 'catId',
+      title: 'Kategória',
+    },
+    {
+      key: 'name',
+      title: 'Név',
+    },
+    {
+      key: 'description',
+      title: 'Leírás',
+    },
+    {
+      key: 'image',
+      title: 'Kép file néve',
+    },
+    {
+      key: 'price',
+      title: 'Ár (HUF)',
+    },
+    {
+      key: 'stock',
+      title: 'Készlet',
+    },
+    {
+      key: 'featured',
+      title: 'Kiemelt',
+    },
+    {
+      key: 'active',
+      title: 'Aktív',
+    }
   ];
 
   constructor() { }

@@ -30,20 +30,20 @@ export class ProductService {
     return this.http.get<Product>(`${this.apiUrl}${this.entityName}/${id}`);
   }
 
-  create(Product: Product): Observable<Product> {
+  create(product: Product): Observable<Product> {
     return this.http.post<Product>(`${this.apiUrl}${this.entityName}`,
-      Product
+      product
     );
   }
 
-  update(Product: Product): Observable<Product> {
-    return this.http.patch<Product>(`${this.apiUrl}${this.entityName}/${Product.id}`,
-      Product
-    );
+  update(product: Product): Observable<Product> {
+    return this.http.patch<Product>(`${this.apiUrl}${this.entityName}/${product.id}`,
+      product
+    )
   }
 
-  remove(Product: Product): Observable<Product> {
-    return this.http.delete<Product>(`${this.apiUrl}${this.entityName}/${Product.id}`
+  remove(product: Product): Observable<Product> {
+    return this.http.delete<Product>(`${this.apiUrl}${this.entityName}/${product.id}`
     );
   }
 
@@ -56,13 +56,13 @@ export class ProductService {
   /*
 
     // Beégetett adatok és szúrések az első részhez
-  
+
     // összes termék ár szerint rendezve
        getAll(): Product[] {
         return this.list
           .sort((a: Product, b: Product) => b.price - a.price);
-      } 
-  
+      }
+
     // n=5 db véletlen kiemelt termék -> home oldal
     getFeatured(n: number = 5): Product[] {
       return this.list
@@ -70,20 +70,20 @@ export class ProductService {
         .sort(() => 0.5 - Math.random())
         .slice(0, n);
     }
-  
+
     // n=5 db véletlen termék -> home oldal
     getSubProducts(n: number = 5): Product[] {
       return this.list
         .sort(() => 0.5 - Math.random())
         .slice(0, n);
     }
-  
+
     // kategórák szerinti összes termék -> category oldal
     getCategory(categoryId: number): Product[] {
       return this.list
         .filter((item: Product) => item.catId == categoryId);
     }
-  
+
     // n=5 db kiemelt véletlen termék adott kategóriában -> category oldal
     getFeaturedinCategory(categoryId: number, n: number = 5): Product[] {
       return this.list
@@ -91,7 +91,7 @@ export class ProductService {
         .sort(() => 0.5 - Math.random())
         .slice(0, n);
     }
-  
+
     // termékek listája
     list: Product[] =
     [

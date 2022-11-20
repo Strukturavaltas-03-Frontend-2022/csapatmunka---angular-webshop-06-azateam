@@ -1,0 +1,167 @@
+<div class="row mx-auto">
+  <div class="col-12 my-2">
+    <!-- <input [(ngModel)]="phrase" class="form-control" type="text"> -->
+    <div class="input-group mb-3">
+      <div class="input-group-text">
+        <select [(ngModel)]="filterKey" class="form-control">
+          <option value="">szűrés minden mezőben</option>
+          <option *ngFor="let col of searchColumns" [value]="col.key">
+            {{ col.title }}
+          </option>
+        </select>
+      </div>
+      <input [(ngModel)]="phrase" class="form-control ml-3 mt-2" type="text" placeholder="kereső kifejezés">
+    </div>
+  </div>
+</div>
+<div class="row mx-auto">
+  <div class="col-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th *ngFor="let col of searchColumns" (click)="onColumnSelect(col.key)" class="column__header">
+            <div class="d-flex justify-content-between">
+              {{ col.title }}
+              <i *ngIf="sortColumn==col.key" [ngClass]="sortIcon" class="sort__direction__icon mt-2"></i>
+            </div>
+          </th>
+          <th>Kezel</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="productList$ | async as products">
+        <tr>
+          <td class="align-middle input__width__narrow text-right px-4">új
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.catId" type="number" class="input__width__narrow text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.name" type="text" class="text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.description" type="text" class="text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.image" type="text">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.price" type="number" class="input__width text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="newProduct.stock" type="number" class="input__width text-right">
+          </td>
+          <td class="align-middle px-5">
+            <div class="d-flex justify-content-center">
+              <input value="true" [(ngModel)]="newProduct.featured" type="checkbox" [checked]="newProduct.featured"
+                class="mx-auto">
+            </div>
+          </td>
+          <td class="align-middle px-5">
+            <div class="d-flex justify-content-center">
+              <input value="true" [(ngModel)]="newProduct.active" type="checkbox" [checked]="newProduct.active">
+            </div>
+          </td>
+          <td class="align-middle">
+            <div class="btn-group" role="group" aria-label="Manage buttons">
+              <button type="button" class="btn btn-warning" (click)="onCreate(newProduct)">
+                <i class="fa fa-save"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr
+          *ngFor="let product of products | filter:phrase:filterKey | sorter:sortColumn:sortDirect | paginate: { itemsPerPage: 10, currentPage: p }">
+          <td class="align-middle input__width__narrow text-right px-4">
+            {{product.id}}
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="product.catId" [disabled]="(selectedProductId !== product.id)" type="text"
+              class="input__width__narrow text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="product.name" [disabled]="(selectedProductId !== product.id)" type="text"
+              class="text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="product.description" [disabled]="(selectedProductId !== product.id)" type="text"
+              class="text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="product.image" [disabled]="(selectedProductId !== product.id)" type="text">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="product.price" [disabled]="(selectedProductId !== product.id)" type="text"
+              class="input__width text-right">
+          </td>
+          <td class="align-middle">
+            <input [(ngModel)]="product.stock" [disabled]="(selectedProductId !== product.id)" type="text"
+              class="input__width text-right">
+          </td>
+          <td class="align-middle px-5">
+            <div class="d-flex justify-content-center">
+              <input value="true" [(ngModel)]="product.featured" [disabled]="(selectedProductId !== product.id)"
+                type="checkbox" [checked]="product.featured" class="mx-auto">
+            </div>
+          </td>
+          <td class="align-middle px-5">
+            <div class="d-flex justify-content-center">
+              <input value="true" [(ngModel)]="product.active" [disabled]="(selectedProductId !== product.id)"
+                type="checkbox" [checked]="product.active">
+            </div>
+          </td>
+          <td class="align-middle">
+            <div class="btn-group" role="group" aria-label="Manage buttons">
+              <button type="button" class="btn btn-primary" (click)="onSelect(product)">
+                <i class="fa fa-pencil"></i>
+              </button>
+              <button type="button" class="btn btn-warning" (click)="onUpdate(product)"
+                [disabled]="(selectedProductId !== product.id)">
+                <i class="fa fa-save"></i>
+              </button>
+              <button type="button" class="btn btn-danger" [disabled]="(selectedProductId !== product.id)"
+                (click)="onSelectForDelete(product)" data-toggle="modal" data-target="#staticBackdrop">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">
+          Termék törlése
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Biztosan véglegesen törölni akarja a terméket?
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Mégsem</button>
+        <button type="button" class="btn btn-primary" (click)="onDelete()" data-dismiss="modal">Igen, biztosan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center col-12 mt-4 mx-auto">
+  <style>
+    .my-pagination /deep/ .ngx-pagination .current {
+      background: rgb(99, 3, 67);
+    }
+  </style>
+  <pagination-controls class=" my-pagination" (pageChange)="p = $event" previousLabel="Előző" nextLabel="Következő">
+  </pagination-controls>
+</div>
