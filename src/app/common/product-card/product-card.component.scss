@@ -1,0 +1,20 @@
+.card {
+box-shadow: 2px 4px 10px black;
+border-radius: 6px;
+}
+.card:hover {
+  position: relative;
+  top: 10px;
+  box-shadow: 0px 2px 10px 2px black;
+}
+.card-title {
+  font-family: fantasy;
+  color:violet;
+}
+.card-text {
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.list-group-item {
+color:red;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
