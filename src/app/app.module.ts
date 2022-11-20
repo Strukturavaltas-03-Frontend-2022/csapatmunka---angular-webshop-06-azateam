@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
@@ -14,6 +15,13 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
 import { HighlightedProductsComponent } from './common/highlighted-products/highlighted-products.component';
 import { DataEditorComponent } from './page/data-editor/data-editor.component';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { ProductListComponent } from './common/product-list/product-list.component';
+import { FilterPipe } from './pipe/filter.pipe';
+import { SortByPricePipe } from './pipe/sort-by-price.pipe';
+import { TopProductPipe } from './pipe/top-product.pipe';
+import { RandomProductsPipe } from './pipe/random-products.pipe';
+import { FeaturedProductPipe } from './pipe/featured-product.pipe';
+import { CategoryFilterPipe } from './pipe/category-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,16 +33,26 @@ import { SorterPipe } from './pipe/sorter.pipe';
     ProductCardComponent,
     HighlightedProductsComponent,
     DataEditorComponent,
-    SorterPipe
+    SorterPipe,
+    ProductListComponent,
+    FilterPipe,
+    SortByPricePipe,
+    TopProductPipe,
+    RandomProductsPipe,
+    FeaturedProductPipe,
+    CategoryFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: DEFAULT_CURRENCY_CODE, useValue: 'HUF' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,53 +1,99 @@
 import { Injectable } from '@angular/core';
 import { Product } from '../model/product';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
+  apiUrl: string = environment.apiUrl;
+
+  entityName: string = 'products';
+
   constructor(
-    private http: HttpClientModule,
+    private http: HttpClient,
   ) { }
 
-  // összes termék ár szerint rendezve
-  getAll(): Product[] {
-    return this.list
-      .sort((a: Product, b: Product) => b.price - a.price);
+  // Második felvonás adatok json-serverről
+  // szerver indítása: json-server .\json\products.json
+  // szűrők átkerültek pipe-kba
+
+  getAll(): Observable<Product[]> {
+    return this.http
+      .get<Product[]>(`${this.apiUrl}${this.entityName}`);
   }
 
-  // n=5 db véletlen kiemelt termék -> home oldal
-  getFeatured(n: number = 5): Product[] {
-    return this.list
-      .filter((item: Product) => item.featured == true)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, n);
+  get(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}${this.entityName}/${id}`);
   }
 
-  // n=5 db véletlen termék -> home oldal
-  getSubProducts(n: number = 5): Product[] {
-    return this.list
-      .sort(() => 0.5 - Math.random())
-      .slice(0, n);
+  create(Product: Product): Observable<Product> {
+    return this.http.post<Product>(`${this.apiUrl}${this.entityName}`,
+      Product
+    );
   }
 
-  // kategórák szerinti összes termék -> category oldal
-  getCategory(categoryId: number): Product[] {
-    return this.list
-      .filter((item: Product) => item.catId == categoryId);
+  update(Product: Product): Observable<Product> {
+    return this.http.patch<Product>(`${this.apiUrl}${this.entityName}/${Product.id}`,
+      Product
+    );
   }
 
-  // n=5 db kiemelt véletlen termék adott kategóriában -> category oldal
-  getFeaturedinCategory(categoryId: number, n: number = 5): Product[] {
-    return this.list
-      .filter((item: Product) => item.featured == true && item.catId == categoryId)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, n);
+  remove(Product: Product): Observable<Product> {
+    return this.http.delete<Product>(`${this.apiUrl}${this.entityName}/${Product.id}`
+    );
   }
 
-  // termékek listája
-  list: Product[] =
+  removeByID(id: number): Observable<Product> {
+    return this.http.delete<Product>(`${this.apiUrl}${this.entityName}/${id}`
+    );
+  }
+
+
+  /*
+
+    // Beégetett adatok és szúrések az első részhez
+  
+    // összes termék ár szerint rendezve
+       getAll(): Product[] {
+        return this.list
+          .sort((a: Product, b: Product) => b.price - a.price);
+      } 
+  
+    // n=5 db véletlen kiemelt termék -> home oldal
+    getFeatured(n: number = 5): Product[] {
+      return this.list
+        .filter((item: Product) => item.featured == true)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, n);
+    }
+  
+    // n=5 db véletlen termék -> home oldal
+    getSubProducts(n: number = 5): Product[] {
+      return this.list
+        .sort(() => 0.5 - Math.random())
+        .slice(0, n);
+    }
+  
+    // kategórák szerinti összes termék -> category oldal
+    getCategory(categoryId: number): Product[] {
+      return this.list
+        .filter((item: Product) => item.catId == categoryId);
+    }
+  
+    // n=5 db kiemelt véletlen termék adott kategóriában -> category oldal
+    getFeaturedinCategory(categoryId: number, n: number = 5): Product[] {
+      return this.list
+        .filter((item: Product) => item.featured == true && item.catId == categoryId)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, n);
+    }
+  
+    // termékek listája
+    list: Product[] =
     [
       {
         "id": 0,
@@ -743,5 +789,6 @@ export class ProductService {
         "active": true
       }
     ];
+    */
 
 }
