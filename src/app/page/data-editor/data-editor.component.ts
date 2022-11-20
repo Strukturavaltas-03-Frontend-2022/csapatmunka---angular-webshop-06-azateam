@@ -79,6 +79,7 @@ export class DataEditorComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    //this.productList.map(product => product.price = 1000)
   }
 
   onSelect(product: Product): void {
