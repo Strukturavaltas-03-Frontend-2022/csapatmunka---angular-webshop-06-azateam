@@ -10,7 +10,7 @@
           </option>
         </select>
       </div>
-      <input [(ngModel)]="phrase" class="form-control" type="text">
+      <input [(ngModel)]="phrase" class="form-control ml-3 mt-2" type="text" placeholder="search phrase">
     </div>
   </div>
 </div>
@@ -19,19 +19,25 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th *ngFor="let col of columns"> {{ col.title }} </th>
+          <th *ngFor="let col of columns" (click)="onColumnSelect(col.key)" class="column__header">
+            <div class="d-flex justify-content-between">
+              {{ col.title }}
+              <i *ngIf="sortColumn==col.key" [ngClass]="sortIcon" class="sort__direction__icon mt-2"></i>
+            </div>
+          </th>
           <th>Manage</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let product of productList | paginate: { itemsPerPage: 10, currentPage: p }">
+        <tr
+          *ngFor="let product of productList | sorter:sortColumn:sortDirect | paginate: { itemsPerPage: 10, currentPage: p }">
           <!-- | filter:phrase:filterKey"> -->
-          <td class="align-middle">
+          <td class="align-middle input__width__narrow text-right px-4">
             {{product.id}}
           </td>
           <td class="align-middle">
             <input [(ngModel)]="product.catId" [disabled]="(selectedProductId !== product.id)" type="text"
-              class="input__width text-right">
+              class="input__width__narrow text-right">
           </td>
           <td class="align-middle">
             <input [(ngModel)]="product.name" [disabled]="(selectedProductId !== product.id)" type="text"
@@ -52,13 +58,13 @@
             <input [(ngModel)]="product.stock" [disabled]="(selectedProductId !== product.id)" type="text"
               class="input__width text-right">
           </td>
-          <td class="align-middle">
+          <td class="align-middle px-5">
             <div class="d-flex justify-content-center">
               <input value="true" [(ngModel)]="product.featured" [disabled]="(selectedProductId !== product.id)"
                 type="checkbox" [checked]="product.featured" class="mx-auto">
             </div>
           </td>
-          <td class="align-middle">
+          <td class="align-middle px-5">
             <div class="d-flex justify-content-center">
               <input value="true" [(ngModel)]="product.active" [disabled]="(selectedProductId !== product.id)"
                 type="checkbox" [checked]="product.active">
@@ -67,11 +73,11 @@
           <td class="align-middle">
             <div class="btn-group" role="group" aria-label="Manage buttons">
               <button type="button" class="btn btn-primary" (click)="onSelect(product)">
-                <i class="fa fa-eye"></i>
+                <i class="fa fa-pencil"></i>
               </button>
               <button type="button" class="btn btn-warning" (click)="onUpdate(product)"
                 [disabled]="(selectedProductId !== product.id)">
-                <i class="fa fa-pencil"></i>
+                <i class="fa fa-save"></i>
               </button>
               <button type="button" class="btn btn-danger" [disabled]="(selectedProductId !== product.id)"
                 (click)="onSelectForDelete(product)" data-toggle="modal" data-target="#staticBackdrop">

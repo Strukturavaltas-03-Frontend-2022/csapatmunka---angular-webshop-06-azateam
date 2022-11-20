@@ -13,6 +13,7 @@ import { HomeComponent } from './page/home/home.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { HighlightedProductsComponent } from './common/highlighted-products/highlighted-products.component';
 import { DataEditorComponent } from './page/data-editor/data-editor.component';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DataEditorComponent } from './page/data-editor/data-editor.component';
     HomeComponent,
     ProductCardComponent,
     HighlightedProductsComponent,
-    DataEditorComponent
+    DataEditorComponent,
+    SorterPipe
   ],
   imports: [
     BrowserModule,

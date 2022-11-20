@@ -18,7 +18,7 @@ export class DataEditorComponent implements OnInit {
 
   productList: Product[] = this.productService.getAll();
 
-  selectedProductId: number = 0;
+  selectedProductId: number = -1;
 
   selectedProductForDelete: Product = new Product;
 
@@ -27,6 +27,11 @@ export class DataEditorComponent implements OnInit {
   filterKey: string = '';
 
   p: number = 1;
+
+  currentHeader: string = 'id';
+  sortColumn: string = 'id';
+  sortDirect: string = 'increasing';
+  sortIcon: string = 'fa fa-long-arrow-down';
 
   columns: ITableColumn[] = [
     {
@@ -47,7 +52,7 @@ export class DataEditorComponent implements OnInit {
     },
     {
       key: 'image',
-      title: 'Image file name and route',
+      title: 'Image file path/name',
     },
     {
       key: 'price',
@@ -59,11 +64,11 @@ export class DataEditorComponent implements OnInit {
     },
     {
       key: 'featured',
-      title: 'Featured?',
+      title: 'Featured',
     },
     {
       key: 'active',
-      title: 'Active?',
+      title: 'Active',
     }
   ];
 
@@ -98,5 +103,26 @@ export class DataEditorComponent implements OnInit {
   onDelete(): void {
     //this.productService.remove(this.selectedProductForDelete);
     this.selectedProductId = 0;
+  }
+
+
+  onColumnSelect(columnHeader: string): void {
+    this.sortColumn = columnHeader;
+    if (columnHeader !== this.currentHeader) {
+      this.sortDirect = 'increasing';
+      this.sortIcon = 'fa fa-long-arrow-up';
+    }
+
+    if (columnHeader == this.currentHeader) {
+      if (this.sortDirect == 'increasing') {
+        this.sortDirect = 'decreasing';
+        this.sortIcon = 'fa fa-long-arrow-down';
+      }
+      else {
+        this.sortDirect = 'increasing';
+        this.sortIcon = 'fa fa-long-arrow-up';
+      }
+    }
+    this.currentHeader = columnHeader;
   }
 }
