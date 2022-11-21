@@ -1,8 +1,9 @@
 .card {
-box-shadow: 2px 4px 10px black;
-border-radius: 6px 6px 6px 6px 2px;
-cursor: pointer;
-max-width: 100%;
+  box-shadow: 2px 4px 10px black;
+  border-radius: 6px 6px 6px 6px 2px;
+  cursor: pointer;
+  max-width: 100%;
+  margin-bottom: -50px;
 }
 .card:hover {
   position: relative;
@@ -11,9 +12,15 @@ max-width: 100%;
 }
 .card-title {
   font-family: fantasy;
-  color:violet;
+  color: violet;
 }
+
 .card-text {
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-white-space: normal;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  white-space: normal;
+  font-size: 0.8rem;
+}
+
+.card__img {
+  width: 100px;
 }

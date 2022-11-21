@@ -44,7 +44,7 @@ export class ConfigService {
     },
     {
       key: 'image',
-      title: 'Kép file néve',
+      title: 'Kép file neve',
     },
     {
       key: 'price',
