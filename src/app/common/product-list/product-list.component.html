@@ -1,16 +1,17 @@
 <div class="src__container">
-<div class="row">
-  <div class="col-12">
-    <div class="input-group">
-      <input [(ngModel)]="filterPhrase" type="text" class="form-control" placeholder="🔎Search..." aria-label="Search"
-        aria-describedby="button-addon2">
+  <div class="row">
+    <div class="col-12">
+      <div class="input-group">
+        <input [(ngModel)]="filterPhrase" type="text" class="form-control" placeholder="🔎Search..." aria-label="Search"
+          aria-describedby="button-addon2">
+      </div>
     </div>
   </div>
 </div>
-</div>
 
-<div class="row">
-  <div class="col-2 w-20" *ngFor="let productItem of productList | filter: filterPhrase:'name' ">
+<div class="row py-4">
+  <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 w-20 my-2"
+    *ngFor="let productItem of productList | filter: filterPhrase:'name' ">
     <app-product-card [product]="productItem"></app-product-card>
   </div>
 </div>

@@ -10,7 +10,7 @@
           </option>
         </select>
       </div>
-      <input [(ngModel)]="phrase" class="form-control ml-3 mt-2" type="text" placeholder="kereső kifejezés">
+      <input [(ngModel)]="phrase" class="form-control ml-3 mt-2" type="text" placeholder="szűrő kifejezés">
     </div>
   </div>
 </div>
@@ -19,18 +19,18 @@
     <table class="table table-striped">
       <thead>
         <tr>
-          <th *ngFor="let col of searchColumns" (click)="onColumnSelect(col.key)" class="column__header">
-            <div class="d-flex justify-content-between">
+          <th *ngFor="let col of searchColumns" (click)="onColumnSelect(col.key)" class="column__header text-light">
+            <div class=" d-flex justify-content-between">
               {{ col.title }}
               <i *ngIf="sortColumn==col.key" [ngClass]="sortIcon" class="sort__direction__icon mt-2"></i>
             </div>
           </th>
-          <th>Kezel</th>
+          <th class="text-light">Kezel</th>
         </tr>
       </thead>
       <tbody *ngIf="productList$ | async as products">
         <tr>
-          <td class="align-middle input__width__narrow text-right px-4">új
+          <td class="align-middle input__width__narrow text-right text-light px-4">új
           </td>
           <td class="align-middle">
             <input [(ngModel)]="newProduct.catId" type="number" class="input__width__narrow text-right">
