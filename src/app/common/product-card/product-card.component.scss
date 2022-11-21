@@ -1,6 +1,8 @@
 .card {
 box-shadow: 2px 4px 10px black;
-border-radius: 6px;
+border-radius: 6px 6px 6px 6px 2px;
+cursor: pointer;
+max-width: 100%;
 }
 .card:hover {
   position: relative;
@@ -12,9 +14,6 @@ border-radius: 6px;
   color:violet;
 }
 .card-text {
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-.list-group-item {
-color:red;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+white-space: normal;
 }

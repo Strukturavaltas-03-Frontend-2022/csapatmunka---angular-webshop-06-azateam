@@ -3,21 +3,19 @@ padding: 0;
 margin: 0;
 }
 .row {
-background-color: violet;
-margin-top: -16px;
-box-shadow: 2px 4px 16px;
-}
+  background-color: violet;
+  margin-top: -16px;
+  box-shadow: 2px 4px 16px;
+  }
 .col-12 {
   color: black;
   font-size: 15px;
 }
 h3 {
-  color: black;
+  color: whitesmoke;
   font-weight: bold;
-  text-shadow: 2px 4px 8px darkorchid;
   text-align: center;
+  text-shadow: 0px 2px 8px wheat;
+  box-shadow: 0px 2px 6px white;
 }
-.col-4 {
-background-color: violet;
-padding-top: 10px;
-}
+
